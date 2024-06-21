@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fluid flex layout</title>
+</head>
+  <style>
+    .container {
+      display: flex;
+      flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+      justify-content: space-between; /* Horizontally space items evenly */
+      width: 60%; /* Set a maximum width for the container */
+      margin: 0 auto; /* Center the container horizontally */
+    }
+
+    div>div {
+      background: rgb(116, 114, 114);
+      padding: 15px;
+      margin: 10px;
+      font-size: 1.2em;
+      font-weight: bold;
+      flex-grow: 1;  /* Make items share available space equally */
+      text-align: center;
+      min-width: 220px; /* Set a minimum width for smaller screens */
+    }
+    .item1 {
+      background: rgb(255,40,40);
+    }
+    .item2 {
+      background: rgb(40,255,255);
+    }
+    .item3 {
+      background: rgb(255,40,173);
+    }
+    .item4 {
+      background: rgb(255,255,40);
+    }
+    .item5 {
+      background: rgb(57,255,30);
+    }
+
+  </style>
+<body bgcolor="black">
+    <div class="container">
+      <div class="item1">Box 1</div>
+      <div class="item2">Box 2</div>
+      <div class="item3">Box 3</div>
+      <div class="item4">Box 4</div>
+      <div class="item5">Box 5</div>
+    </div>
+</body>
+</html>
